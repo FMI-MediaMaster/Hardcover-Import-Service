@@ -1,6 +1,6 @@
 import runImportTests, { Fields } from '@media-master/import-service-tests';
 import { Express } from 'express';
-import { describe} from 'vitest';
+import { describe } from 'vitest';
 import app from '../src/app';
 
 const server = app as Express;
