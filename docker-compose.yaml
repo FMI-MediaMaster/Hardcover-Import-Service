@@ -1,12 +1,12 @@
 services:
-  <NAME>:
+  hardcover-import-service:
     restart: always
     build:
       context: .
       dockerfile: Dockerfile
-    image: <NAME>:latest
-    hostname: <NAME>.mediamaster.internal
-    container_name: <NAME>.mediamaster.internal
+    image: hardcover-import-service:latest
+    hostname: hardcover-import-service.mediamaster.internal
+    container_name: hardcover-import-service.mediamaster.internal
     volumes:
       - ./.env:/app/.env:ro
     networks:
